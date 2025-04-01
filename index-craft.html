@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bağdagül Yoruk – Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="content-box">
+      <!-- Logo + Greeting -->
+      <a href="index-craft.html">
+        <img
+          src="images/evil-eye-logo.png"
+          alt="Evil Eye Logo"
+          class="evil-eye-logo"
+        />
+      </a>
+    <section class="bubble-hero">
+  <div class="animated-bubble">
+    <svg viewBox="0 0 600 600">
+      <defs>
+        <pattern id="evilEyePattern" patternUnits="userSpaceOnUse" width="600" height="600">
+          <image src="images/evil-eye-logo.png"  />
+        </pattern>
+      </defs>
+      <path fill="url(#evilEyePattern)">
+        <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+          M300,50 
+          C420,50 550,180 550,300 
+          C550,420 420,550 300,550 
+          C180,550 50,420 50,300 
+          C50,180 180,50 300,50Z;
+
+          M310,60 
+          C430,80 560,190 540,300 
+          C520,410 410,540 300,530 
+          C190,520 70,410 80,300 
+          C90,190 190,40 310,60Z;
+
+          M300,50 
+          C420,50 550,180 550,300 
+          C550,420 420,550 300,550 
+          C180,550 50,420 50,300 
+          C50,180 180,50 300,50Z;
+        " />
+      </path>
+    </svg>
+  </div>
+
+  <div class="intro-title">
+    <h2 class="role-label">Cognitive Scientist & Creative Technologist</h2>
+    <h1 class="masked-title">Hello, I am Bağdagül</h1>
+  </div>
+</section>
+
+          <p class="tagline">
+            I craft with care... <br />
+            <a href="about.html">More about me →</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index-craft.html" class="active">craft</a></li>
+          <li><a href="gallery.html">lens</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="resume.pdf" target="_blank">resume</a></li>
+          <li><a href="#contact">connect</a></li>
+        </ul>
+      </nav>
+
+      <!-- Projects Section -->
+      <section class="projects-section">
+        <h2>crafts</h2>
+
+        <!-- Project Block 1 -->
+        <div class="project-card">
+          <img src="images/dmvthumbnail.jpg" alt="DMV Case Study" />
+          <div class="project-info">
+            <h3>NY DMV Redesign</h3>
+            <p>
+              Government site reimagined with accessibility, UX clarity, and
+              inclusive design in mind.
+            </p>
+            <a href="dmv.html" class="project-link">view case study →</a>
+          </div>
+        </div>
+
+        <!-- Add more project-card blocks as needed -->
+      </section>
+
+      <!-- Connect Section -->
+      <section id="contact" class="contact-section">
+        <h2>Want to get in touch?<br />Drop me a line!</h2>
+        <form
+          action="https://formsubmit.co/bagdagulyoruk@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+
+          <label for="message">Write a message</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="6"
+            required
+            placeholder="Enter your message"
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

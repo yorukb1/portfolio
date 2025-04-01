@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.moveLeft {
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-duration: 1s;
+    -webkit-animation timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveLeft {
+   from {-webkit-transform: translateX(0);}
+   to {-webkit-transform: translateX(-100px);}
+}
+
+*/
+
+/* Animaation Part 2 */
+
+.moveLeft:hover {
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-duration: 2s;
+    -webkit-animation timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveLeft {
+20% {-webkit-transform: translateX(20px) rotate(0.5turn);}
+60% {-webkit-transform: translateX(-250px) rotate(-2turn);}
+100% {-webkit-transform: translateX(0px) rotate(2turn);}
+}
